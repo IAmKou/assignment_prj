@@ -1,1 +1,101 @@
+Create database Job_website
+Use Job_website
+Drop database Job_website
+Create table User_Account(
+UID int identity(1,1) Primary Key,
+Username varchar(50) Not null,
+Password varchar(50) Not null,
+Email varchar(50) Not null,
+DOB date,
+PhoneNumber int,
+avatar image,
+gender varchar(10),
+TID int FOREIGN KEY REFERENCES User_Type(TID)
+);
+Create table User_Type(
+TID int Primary key,
+Type_name varchar(10) Not null
+);
+Create table Company_Account(
+CID int identity(1,1) Primary key,
+Name varchar(50) NOT NULL,
+Password varchar(50) NOT NULL,
+Email varchar(50) NOT NULL,
+Tel int,
+Address varchar(100),
+avatar image,
+description varchar(150),
+company_website_url varchar(50),
+CPID int FOREIGN KEY REFERENCES Company_printstream(CPID)
+);
+Create table Company_printstream(
+CPID int Primary key,
+company_printstream varchar(50) Not null
+);
+Create table Seeker_Profile(
+user_id int Primary Key Foreign key references User_Account(UID),
+First_name varchar(50),
+Middle_name varchar(50),
+Last_name varchar(50) Not null,
+);
+Create table Educational_detail(
+user_id int Primary Key Foreign key references User_Account(UID),
+certificate varchar(50) not null ,
+major varchar(50) not null,
+study_place_name varchar (50) not null,
+star_date date not null,
+completion_date date ,
+gpa int 
+);
+Create table Seeker_skill(
+user_id int Primary Key Foreign key references User_Account(UID),
+Skill_id int Foreign key references Skill(SID),
+Skill_level int
+);
+Create table Skill(
+SID int Primary key,
+Skill_name varchar(50) not null
+);
+Create table experience_detail(
+user_id int Primary Key Foreign key references User_Account(UID),
+start_date date,
+end_date date,
+Job_title varchar(50),
+Company_name varchar(50),
+Description varchar(50)
+);
+Create table Job_post(
+JID int identity(1,1) Primary key,
+Posted_by int foreign key references User_Account(UID),
+Job_type_id int foreign key references Job_Type(JTID),
+Company_id int foreign key references Company_Account(CID),
+created_date date,
+Description varchar(200),
+Job_location_id int foreign key references Job_location(JLID),
+is_active bit
+);
+
+Create table Job_type(
+JTID int Primary key,
+Job_type_name varchar(50)
+);
+Create table Job_location(
+JLID int identity(1,1) Primary key,
+street_address varchar(100),
+city varchar(50),
+state varchar(50),
+country varchar(50),
+zip varchar(50)
+);
+Create table Job_post_activity(
+user_id int Primary Key Foreign key references User_Account(UID),
+Job_post_id int foreign key references Job_post(JID),
+apply_date date
+);
+Create table Job_skill_set(
+JSSID int Primary key foreign key references Skill(SID),
+Job_post_id int foreign key references Job_post(JID),
+skill_level int
+);
+
 
