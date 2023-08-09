@@ -1,6 +1,6 @@
 # assignment_prj
 task
-https://docs.google.com/spreadsheets/d/1sjrfgpKVBVU8UMXUsjB0Tf6QxtzAsxAQZBInOqTw1aI/edit#gid=0
+https://docs.google.com/spreadsheets/d/1sjrfgpKVBVU8UMXUsjB0Tf6QxtzAsxAQZBInOqTw1aI/edit?usp=sharing
 
 SRS
 https://docs.google.com/document/d/1yZy6uLKLJgxFBAuU6o9v77IjWZ8CB1v4gBF4fO3tECI/edit?usp=sharing
