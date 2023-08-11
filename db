@@ -72,7 +72,6 @@ Company_id int foreign key references Company_Account(CID),
 created_date date,
 Description varchar(200),
 Job_location_id int foreign key references Job_location(JLID),
-is_active bit
 );
 
 Create table Job_type(
