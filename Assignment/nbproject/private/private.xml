@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/ACER/OneDrive/Documents/NetBeansProjects/Assignment/src/java/DBContext/DBContext.java</file>
+            <file>file:/C:/Users/ACER/OneDrive/Documents/NetBeansProjects/Assignment/web/userRegister.jsp</file>
+            <file>file:/C:/Users/ACER/OneDrive/Documents/NetBeansProjects/Assignment/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/ACER/OneDrive/Documents/NetBeansProjects/Assignment/src/java/DAO/userDAO.java</file>
+            <file>file:/C:/Users/ACER/OneDrive/Documents/NetBeansProjects/Assignment/web/login.jsp</file>
+            <file>file:/C:/Users/ACER/OneDrive/Documents/NetBeansProjects/Assignment/src/java/controller/companyRegisterController.java</file>
+            <file>file:/C:/Users/ACER/OneDrive/Documents/NetBeansProjects/Assignment/web/main.jsp</file>
+            <file>file:/C:/Users/ACER/OneDrive/Documents/NetBeansProjects/Assignment/src/java/controller/companyLoginController.java</file>
+            <file>file:/C:/Users/ACER/OneDrive/Documents/NetBeansProjects/Assignment/web/companyRegister.jsp</file>
+            <file>file:/C:/Users/ACER/OneDrive/Documents/NetBeansProjects/Assignment/src/java/model/userAccount.java</file>
+            <file>file:/C:/Users/ACER/OneDrive/Documents/NetBeansProjects/Assignment/src/java/model/companyAccount.java</file>
+            <file>file:/C:/Users/ACER/OneDrive/Documents/NetBeansProjects/Assignment/src/java/controller/registerController.java</file>
+            <file>file:/C:/Users/ACER/OneDrive/Documents/NetBeansProjects/Assignment/src/java/controller/userLoginController.java</file>
+            <file>file:/C:/Users/ACER/OneDrive/Documents/NetBeansProjects/Assignment/src/java/DAO/companyDAO.java</file>
+        </group>
+    </open-files>
+</project-private>
