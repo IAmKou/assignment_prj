@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="650.0" maxWidth="1152.0" prefHeight="650.0" prefWidth="1152.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hust.aims.views.screens.cart.CartScreen">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" styleClass="header" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="86.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../aims_logo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="17.0" left="69.0" right="32.0" top="17.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label contentDisplay="CENTER" prefHeight="59.0" prefWidth="103.0" style="-fx-border-style: normal;" stylesheets="@../style.css" text="Cart" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+         </children></HBox>
+   </top>
+   <right>
+      <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="309.0" style="-fx-background-color: rgba(217, 217, 217, 0.24);" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <Label prefHeight="36.0" prefWidth="118.0" style="-fx-font-size: 28; -fx-border-color: rgba(217, 217, 217, 0.01); -fx-border-width: 1px; -fx-border-style: solid;" styleClass="item" text="Subtotal:" />
+                  <Label fx:id="lbSubtotal" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="180.0" style="-fx-font-size: 28; -fx-border-color: rgba(217, 217, 217, 0.01); -fx-border-width: 1px; -fx-border-style: solid; -fx-alignment: center-right;" styleClass="item" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="200.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <Label prefHeight="30.0" style="-fx-font-size: 28; -fx-border-color: rgba(217, 217, 217, 0.01); -fx-border-width: 1px; -fx-border-style: solid;" styleClass="item" text="Fee" />
+                  <Label prefHeight="30.0" style="-fx-font-size: 12px; -fx-alignment: bottom-center; -fx-border-color: rgba(217, 217, 217, 0.01); -fx-border-width: 1px; -fx-border-style: solid;" styleClass="item" text="(eligible)" />
+                  <Label prefHeight="30.0" style="-fx-font-size: 28; -fx-border-color: rgba(217, 217, 217, 0.01); -fx-border-width: 1px; -fx-border-style: solid;" styleClass="item" text=":" />
+                  <Label fx:id="lbFeeEligible" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="182.0" style="-fx-font-size: 28; -fx-border-color: rgba(217, 217, 217, 0.01); -fx-border-width: 1px; -fx-border-style: solid; -fx-alignment: center-right;" styleClass="item" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <Label style="-fx-font-size: 28; -fx-border-color: rgba(217, 217, 217, 0.01); -fx-border-width: 1px; -fx-border-style: solid;" styleClass="item" text="Fee" />
+                  <Label prefHeight="30.0" style="-fx-font-size: 12px; -fx-alignment: bottom-center; -fx-border-color: rgba(217, 217, 217, 0.01); -fx-border-width: 1px; -fx-border-style: solid;" styleClass="item" text="(ineligible)" />
+                  <Label prefHeight="30.0" style="-fx-font-size: 28; -fx-border-color: rgba(217, 217, 217, 0.01); -fx-border-width: 1px; -fx-border-style: solid;" styleClass="item" text=":" />
+                  <Label fx:id="lbFeeIneligible" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="173.0" style="-fx-font-size: 28; -fx-border-color: rgba(217, 217, 217, 0.01); -fx-border-width: 1px; -fx-border-style: solid; -fx-alignment: center-right;" styleClass="item" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <Label prefHeight="36.0" prefWidth="80.0" style="-fx-font-size: 28; -fx-border-color: rgba(217, 217, 217, 0.01); -fx-border-width: 1px; -fx-border-style: solid;" styleClass="item" text="Total:" />
+                  <Label fx:id="lbTotal" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="223.0" style="-fx-font-size: 28; -fx-border-color: rgba(217, 217, 217, 0.01); -fx-border-width: 1px; -fx-border-style: solid; -fx-alignment: center-right;" styleClass="item" />
+               </children>
+            </HBox>
+            <Label maxWidth="1.7976931348623157E308" prefWidth="309.0" style="-fx-alignment: center-right; -fx-font-size: 15px; -fx-border-width: 0 0 0 2px; -fx-border-style: solid; -fx-border-color: rgba(217, 217, 217, 0.01);" styleClass="item" text="(VAT 10%)" textFill="#ff2828">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </Label>
+            <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <CheckBox fx:id="chkRush" mnemonicParsing="false" style="-fx-font-size: 20px;" styleClass="item" text="Rush Order">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" />
+               </padding>
+            </CheckBox>
+            <Button fx:id="btnPlaceOrder" alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handlePlaceOrder" style="-fx-font-size: 28px; -fx-background-color: #F28500; -fx-background-radius: 50px;" styleClass="item" text="Place Order" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="5.0" right="10.0" top="10.0" />
+         </BorderPane.margin></VBox>
+   </right>
+   <center>
+      <VBox fx:id="cartItems" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="itemList" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="1027.0" style="-fx-background-color: rgba(217, 217, 217, 0.24);" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="5.0" top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>

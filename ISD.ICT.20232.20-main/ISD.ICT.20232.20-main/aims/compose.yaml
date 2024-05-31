@@ -1,0 +1,15 @@
+services:
+  db:
+    image: 'aims-db:latest'
+    build:
+      context: ./postgres-db
+      dockerfile: Dockerfile
+    ports:
+      - 5432:5432
+    volumes:
+      - ./postgres-db/scriptdb.sql:/docker-entrypoint-initdb.d/scriptdb.sql
+#      - ./postgres-db/postgres-data:/var/lib/postgresql/data
+    env_file:
+      - .env
+
+

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="768.0" prefWidth="1366.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hust.aims.views.screens.placeorder.ShippingScreen">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" styleClass="header" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="86.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../aims_logo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="17.0" left="69.0" right="32.0" top="17.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label contentDisplay="CENTER" prefHeight="59.0" prefWidth="165.0" style="-fx-border-style: normal;" stylesheets="@../style.css" text="Shipping" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox fx:id="cartItems" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="5.0" top="10.0" />
+         </BorderPane.margin>
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label style="-fx-border-color: rgba(217, 217, 217, 0.01); -fx-border-width: 1px; -fx-border-style: solid;" styleClass="item" text="Name">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="40.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="txtName" prefWidth="642.0" styleClass="item">
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label style="-fx-border-color: rgba(217, 217, 217, 0.01); -fx-border-width: 1px; -fx-border-style: solid;" styleClass="item" text="Phone">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="40.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="txtPhone" prefWidth="642.0" styleClass="item">
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label style="-fx-border-color: rgba(217, 217, 217, 0.01); -fx-border-width: 1px; -fx-border-style: solid;" styleClass="item" text="City">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="40.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="txtCity" prefWidth="642.0" styleClass="item">
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label style="-fx-border-color: rgba(217, 217, 217, 0.01); -fx-border-width: 1px; -fx-border-style: solid;" styleClass="item" text="Province">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="40.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="txtProvince" prefWidth="642.0" styleClass="item">
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label style="-fx-border-color: rgba(217, 217, 217, 0.01); -fx-border-width: 1px; -fx-border-style: solid;" styleClass="item" text="Address">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="40.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="txtAddress" prefWidth="642.0" styleClass="item">
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label style="-fx-border-color: rgba(217, 217, 217, 0.01); -fx-border-width: 1px; -fx-border-style: solid;" styleClass="item" text="Shipping Instruction">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="40.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="txtInstruction" prefWidth="642.0" styleClass="item">
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label style="-fx-border-color: rgba(217, 217, 217, 0.01); -fx-border-width: 1px; -fx-border-style: solid;" styleClass="item" text="Delivery Date">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="40.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="txtDate" prefWidth="642.0" styleClass="item">
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label style="-fx-border-color: rgba(217, 217, 217, 0.01); -fx-border-width: 1px; -fx-border-style: solid;" styleClass="item" text="Delivery Time">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="40.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="txtTime" prefWidth="642.0" styleClass="item">
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <Button fx:id="btnConfirm" alignment="CENTER" maxWidth="400.0" mnemonicParsing="false" onAction="#handleConfirm" style="-fx-font-size: 28px; -fx-background-color: #F28500; -fx-background-radius: 50px;" styleClass="item" text="Confirm Delivery" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="30.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
